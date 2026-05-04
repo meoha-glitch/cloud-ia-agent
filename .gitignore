@@ -18,3 +18,7 @@ venv/
 # Système
 .DS_Store
 *.log
+terraform/terraform.tfvars
+cloud-ia-key
+cloud-ia-key
+cloud-ia-key.pub
