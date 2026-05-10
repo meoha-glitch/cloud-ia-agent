@@ -79,3 +79,21 @@
 - -auto-approve sur apply et destroy pour automatisation
 - Sauvegarde JSON de chaque suggestion IA dans logs/
 - Confirmation manuelle avant apply et destroy par sécurité
+
+
+## Jour 5 — Tests complets, README et livraison finale
+**Date :** 2026-05-XX
+
+### Réalisé
+- 16 tests unitaires écrits et validés (pytest)
+- README.md complet avec installation, utilisation, architecture
+- Fichiers .env.example et terraform.tfvars.example créés
+- Tag v1.0.0 créé sur GitHub
+- Projet livré et documenté
+
+### Bilan du projet
+- 5 jours de développement
+- Stack 100% gratuite : Ollama, Terraform, AWS Free Tier
+- Infrastructure AWS provisionnée et détruite automatiquement
+- 16 tests unitaires avec mocks
+- Documentation complète sur GitHub
