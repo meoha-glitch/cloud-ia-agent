@@ -53,3 +53,29 @@
 - Versioning S3 activé dès le départ
 - Accès public S3 bloqué par défaut (sécurité)
 - user_data installe nginx automatiquement au démarrage EC2
+
+
+
+## Jour 4 — Orchestration CLI + Déploiement réel AWS
+**Date :** 2026-XX-XX
+
+### Réalisé
+- main.py : CLI complète avec menu interactif 6 options
+- Logging horodaté dans logs/deployment.log
+- Cycle complet : IA → init → validate → plan → apply
+- Déploiement réel sur AWS : EC2 t2.micro + S3 + Security Group
+- IP publique obtenue, nginx accessible via navigateur
+- terraform destroy testé et validé
+- Toutes les ressources AWS nettoyées après test
+
+### Outputs du déploiement
+- EC2 IP       : 15.236.XXX.XXX
+- Instance ID  : i-XXXXXXXXXXXXXXXXX
+- Bucket S3    : cloud-ia-bucket-2026
+- Region       : eu-west-3
+
+### Décisions techniques
+- subprocess.Popen pour afficher Terraform en temps réel
+- -auto-approve sur apply et destroy pour automatisation
+- Sauvegarde JSON de chaque suggestion IA dans logs/
+- Confirmation manuelle avant apply et destroy par sécurité

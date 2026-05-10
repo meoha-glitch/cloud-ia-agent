@@ -1,0 +1,3 @@
+logs/*.log
+logs/last_suggestion.json
+terraform/tfplan.out
